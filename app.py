@@ -6,15 +6,15 @@ model = pickle.load(open('model.pkl', 'rb'))
 
 def run():
     with st.form(key='my_form'):
-       st.title("Early Stage diabetes prediction")
-       file_ = open("act4yourheart-diabetes.gif", "rb")
-       contents = file_.read()
-       data_url = base64.b64encode(contents).decode("utf-8")
-       file_.close()
-       st.markdown(
+        st.title("Early Stage diabetes prediction")
+        file_ = open("act4yourheart-diabetes.gif", "rb")
+        contents = file_.read()
+        data_url = base64.b64encode(contents).decode("utf-8")
+        file_.close()
+        st.markdown(
            f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',
            unsafe_allow_html=True,
-       )
+        )
         gender = st.radio("Gender: ", ('Male', 'Female'))
         if gender == 'Male':
             a = 1
