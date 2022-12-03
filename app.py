@@ -47,55 +47,69 @@ def run():
             d = 1
         else:
             d = 0
-        polyphagia = st.radio("Polyphagia: ", ('Yes', 'No'))
+        polyphagia = st.radio("Do you have Polyphagia: ", ('Yes', 'No'))
         if polyphagia == 'Yes':
             e = 1
         else:
             e = 0
-        gt_thrush = st.radio("Genital thrush: ", ('Yes', 'No'))
+        link3 = '[what is Polyphagia?](https://en.wikipedia.org/wiki/Polyphagia)'
+        st.markdown(link3, unsafe_allow_html=True)
+        gt_thrush = st.radio("Do you have Genital thrush: ", ('Yes', 'No'))
         if gt_thrush == 'Yes':
             f = 1
         else:
             f = 0
-        visual_blurring = st.radio("visual blurring: ", ('Yes', 'No'))
+        link4 = '[what is Genital thrush?](https://www.ticahealth.org/interactive-guide/your-body/genital-problems/genital-thrush/)'
+        st.markdown(link4, unsafe_allow_html=True)
+        visual_blurring = st.radio("Do you hvae visual blurring: ", ('Yes', 'No'))
 
         if visual_blurring == 'Yes':
             g = 1
         else:
             g = 0
-        itching = st.radio("Itching: ", ('Yes', 'No'))
+        link5 = '[what is Visua blurring?](https://en.wikipedia.org/wiki/Blurred_vision)'
+        st.markdown(link5, unsafe_allow_html=True)
+        itching = st.radio("Do you have Itching: ", ('Yes', 'No'))
 
         if itching == 'Yes':
             h = 1
         else:
             h = 0
-        irritability = st.radio("Irritability: ", ('Yes', 'No'))
+        link6 = '[what is Itching?](https://en.wikipedia.org/wiki/Itch)'
+        st.markdown(link6, unsafe_allow_html=True) 
+        irritability = st.radio("Do you have Irritability: ", ('Yes', 'No'))
 
         if irritability == 'Yes':
             i = 1
         else:
             i = 0
-        delayed_healing = st.radio("delayed healing: ", ('Yes', 'No'))
+        link7 = '[what is Irritability?](https://en.wikipedia.org/wiki/Irritability)'
+        st.markdown(link7, unsafe_allow_html=True)
+        delayed_healing = st.radio("Do you have delayed healing: ", ('Yes', 'No'))
         if delayed_healing == 'Yes':
             j = 1
         else:
             j = 0
-        partial_paresis = st.radio("partial paresis: ", ('Yes', 'No'))
+        partial_paresis = st.radio("Do you have partial paresis: ", ('Yes', 'No'))
         if partial_paresis == 'Yes':
             k = 1
         else:
             k = 0
-        muscle_stiffness = st.radio("muscle stiffness: ", ('Yes', 'No'))
+        link8 = '[what is Paresis?](https://en.wikipedia.org/wiki/Paresis)'
+        st.markdown(link8, unsafe_allow_html=True)
+        muscle_stiffness = st.radio("Do you have muscle stiffness: ", ('Yes', 'No'))
         if muscle_stiffness == 'Yes':
             l = 1
         else:
             l = 0
-        alopecia = st.radio("Alopecia: ", ('Yes', 'No'))
+        alopecia = st.radio("Do you have Alopecia: ", ('Yes', 'No'))
         if alopecia == 'Yes':
             m = 1
         else:
             m = 0
-        obesity = st.radio("Obesity: ", ('Yes', 'No'))
+        link9 = '[what is Alopecia?](https://en.wikipedia.org/wiki/Hair_loss)'
+        st.markdown(link9, unsafe_allow_html=True)
+        obesity = st.radio("Do you have Obesity: ", ('Yes', 'No'))
         if obesity == 'Yes':
             n = 1
         else:
