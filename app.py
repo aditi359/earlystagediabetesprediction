@@ -9,6 +9,7 @@ def run():
         st.title("Early Stage diabetes prediction")
         file_ = open("act4yourheart-diabetes.gif", "rb")
         contents = file_.read()
+        st.markdown(f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',unsafe_allow_html=True,)
         data_url = base64.b64encode(contents).decode("utf-8")
         file_.close()
         gender = st.radio("Gender: ", ('Male', 'Female'))
