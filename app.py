@@ -1,11 +1,16 @@
 import streamlit as st
 import pickle
+import base64
 model = pickle.load(open('model.pkl', 'rb'))
 
 
 def run():
     with st.form(key='my_form'):
         st.title("Early Stage diabetes prediction")
+        file_ = open(""Diabetes-prediction-2.png"", "rb")
+contents = file_.read()
+data_url = base64.b64encode(contents).decode("utf-8")
+file_.close()
         gender = st.radio("Gender: ", ('Male', 'Female'))
         if gender == 'Male':
             a = 1
