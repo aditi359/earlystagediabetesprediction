@@ -21,22 +21,26 @@ def run():
         else:
             a = 0
         age = st.slider(label='Enter your age', min_value=1, max_value=100)
-        polyuria = st.radio("Polyuria: ", ('Yes', 'No'))
+        polyuria = st.radio("Do you have Polyuria: ", ('Yes', 'No'))
         if polyuria == 'Yes':
             b = 1
         else:
             b = 0
-        polydipsia = st.radio("Polydipsia: ", ('Yes', 'No'))
+        link1 = '[what is Polyuria?](https://en.wikipedia.org/wiki/Polyuria)'
+        st.markdown(link1, unsafe_allow_html=True)
+        
+        
+        polydipsia = st.radio("Do you have Polydipsia: ", ('Yes', 'No'))
         if polydipsia == 'Yes':
             o = 1
         else:
             o = 0
-        wt_loss = st.radio("sudden weight loss: ", ('Yes', 'No'))
+        wt_loss = st.radio("Have you experienced sudden weight loss: ", ('Yes', 'No'))
         if wt_loss == 'Yes':
             c = 1
         else:
             c = 0
-        weakness = st.radio("weakness: ", ('Yes', 'No'))
+        weakness = st.radio("Do you feel any weakness: ", ('Yes', 'No'))
         if weakness == 'Yes':
             d = 1
         else:
