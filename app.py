@@ -114,6 +114,9 @@ def run():
             n = 1
         else:
             n = 0
+        link9 = '[CONTACT US](https://aditi359-contactus-contact-form-gkb347.streamlit.app/)'
+        st.markdown(link9, unsafe_allow_html=True)
+         
 
         if st.form_submit_button("Submit"):
             features = [[age, a, b, o, c, d, e, f, g, h, i, j, k, l, m, n]]
