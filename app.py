@@ -133,5 +133,5 @@ def run():
                     )
 
 link9 = '[CONTACT US](https://aditi359-contactus-contact-form-gkb347.streamlit.app/)'
-    st.markdown(link9, unsafe_allow_html=True)
+st.markdown(link9, unsafe_allow_html=True)
 run()
