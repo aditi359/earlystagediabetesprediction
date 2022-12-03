@@ -35,6 +35,8 @@ def run():
             o = 1
         else:
             o = 0
+        link2 = '[what is Polydipsia?](https://en.wikipedia.org/wiki/Polydipsia)'
+        st.markdown(link2, unsafe_allow_html=True)
         wt_loss = st.radio("Have you experienced sudden weight loss: ", ('Yes', 'No'))
         if wt_loss == 'Yes':
             c = 1
